@@ -48,7 +48,7 @@ def reverse_list(list)
   output_list = Stack.new
 
   while list
-    output_list.push(list)
+    output_list.push(list.value)
     list = list.next_node
   end
   output_list
@@ -61,6 +61,5 @@ stack.push(3)
 stack.push(4)
 
 output_list = reverse_list(stack.first)
-puts output_list.pop.inspect
-puts output_list.pop.inspect
+print_values(output_list.first)
 
